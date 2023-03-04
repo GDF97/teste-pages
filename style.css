@@ -45,7 +45,6 @@ p{
 
 img{
     max-width: 200px;
-    padding-bottom: 1rem;
 }
 
 .main{
@@ -112,6 +111,15 @@ a:hover{
     .buttons{
         flex-direction: column;
         width: 75%;
-        gap: 1rem;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .container{
+        align-items: start;
+    }
+    
+    p{
+        padding: 1.2rem;
     }
 }
