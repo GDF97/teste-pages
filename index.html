@@ -8,23 +8,53 @@
 
     <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Source+Sans+Pro:600,600italic,300,300italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="main">
-            <section id="home-section">
+            <section id="home-section" class="active">
                 <img src="logo.png" alt="" width="200">
                 <h1 id="title">Ideal Materiais</h1>
-                <p id="text">Acabamentos, Ferramentas, Hidráulica e muito mais. Aqui tem tudo o que você precisa para reformar sua casa</p>
-                <ul class="buttons">
-                    <li ><a href="" class="btn">Sobre</a></li>
-                    <li ><a href="" class="btn">Nosso Trabalho</a></li>
-                    <li ><a href="" class="btn">Contato</a> </li>
+                <p id="text">Ipsum amet et faucibus. Pellentesque et venenatis dolor imperdiet magna feugiat lorem dolor mattis lorem sagittis.</p>
+                <ul class="buttons" >
+                    <li ><a href="#" class="btn" onclick="Sobre()">Sobre</a></li>
+                    <li ><a href="#" class="btn" onclick="Work()">Nosso Trabalho</a></li>
+                    <li ><a href="#" class="btn" onclick="Contato()">Contato</a> </li>
                 </ul>
+            </section>
+            <section id="sobre-section" class="inactive">
+                <span class="frame"></span>
+                <div class="inner">
+                    <a href="#" id="btn-back" onclick="Voltar()">&larr;Voltar</a>
+                    <h1 id="title-card">Sobre</h1>
+                    <p id="text-card">Etiam tristique libero eu nibh porttitor fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus lorem sed tempus.</p>
+                </div>
+            </section>
+            <section id="work-section" class="inactive">
+                <span class="frame"></span>
+                <div class="inner">
+                    <a href="#" id="btn-back" onclick="Voltar()">&larr;Voltar</a>
+                    <h1 id="title-card">Nosso Trabalho</h1>
+                    <p id="text-card">Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+                        Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+                </div>
+            </section>
+            <section id="contato-section" class="inactive">
+                <div class="inner">
+                    <a href="#" id="btn-back" onclick="Voltar()">&larr;Voltar</a>
+                    <h1 id="title-card">Contato</h1>
+                    <p id="text-card"> Sed interdum et malesuada fames ac ante ipsum primis in faucibus lorem sed tempus magna adipiscing.</p>
+                    <form>
+                        <input type="text" placeholder="Nome" autocomplete="off" required>
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <input type="submit" value="Enviar Mensagem">
+                    </form>
+                </div>
             </section>
         </div>
     </div>
-    <script src="javascript.js"></script>
+
 </body>
 </html>
