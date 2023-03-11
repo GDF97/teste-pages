@@ -16,6 +16,7 @@
 body{
     background-image: url(bgV.jpg);
     background-position: center;
+    background-size: cover;
 }
 ul,li{
     list-style: none;
